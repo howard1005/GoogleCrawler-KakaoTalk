@@ -15,16 +15,23 @@ Any issues please report to <howard170627@gmail.com>
     + `port` is port of connected DB (default : 3306)
 
 - Make DB table
-    ```python
+    ```shell script
     python DataBase.py
     ```
+
 - Set Keyword (Modify CrawlerHandler.py)
     + Modify main code 
     ```python
     crawler_handler.addKeywords(['your keyword 1', 'your keyword 2' ... 'your keyword n'])
     ```
-  
+
+- KakaoTalk config
+    + run token webserver
+    ```shell script
+    cd accounts
+    python manage.py runserver
+    ```
 # Run
-   ```python
+   ```shell script
    python CrawlerHandler.py
    ```
